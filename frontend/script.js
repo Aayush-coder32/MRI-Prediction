@@ -133,6 +133,8 @@
   // DOM REFERENCES
   // =========================================================================
   const dom = {
+    landingPage: document.getElementById("landingPage"),
+    enterWorkstationBtn: document.getElementById("enterWorkstationBtn"),
     navLinks: document.querySelectorAll("[data-tab]"),
     tabViews: document.querySelectorAll(".tab-view"),
     brandHomeBtn: document.getElementById("brandHomeBtn"),
@@ -328,7 +330,17 @@
     dom.brandHomeBtn.addEventListener("click", () => switchTab("overview"));
   }
   if (dom.quickAnalyzeBtn) {
-    dom.quickAnalyzeBtn.addEventListener("click", () => switchTab("upload"));
+    dom.quickAnalyzeBtn.addEventListener("click", () => {
+      document.body.classList.remove("landing-mode");
+      switchTab("upload");
+    });
+  }
+  if (dom.enterWorkstationBtn) {
+    dom.enterWorkstationBtn.addEventListener("click", () => {
+      document.body.classList.remove("landing-mode");
+      switchTab("overview");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
   }
 
   // =========================================================================
