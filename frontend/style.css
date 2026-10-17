@@ -87,7 +87,9 @@
 
 /* Public facing entry page */
 .landing-mode .main-body-container { display: none; }
+.top-nav { order: 0; }
 .landing-page {
+  order: 1;
   display: none;
   max-width: 1440px;
   margin: 0 auto;
@@ -96,6 +98,7 @@
   color: #edf5fb;
   background: radial-gradient(ellipse at 78% 36%, rgba(20, 105, 135, .16), transparent 36%), #080e16;
 }
+.main-body-container { order: 2; }
 .landing-mode .landing-page { display: block; }
 .landing-topline, .landing-footer, .visual-index, .visual-caption { display: flex; justify-content: space-between; align-items: center; }
 .landing-topline { padding-bottom: 22px; border-bottom: 1px solid rgba(149, 190, 208, .15); color: #91a8b5; font: 10px var(--font-mono); letter-spacing: .13em; }
