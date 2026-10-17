@@ -25,6 +25,46 @@
   <!-- App Wrapper -->
   <div class="app-layout">
 
+    <section class="landing-page" id="landingPage" aria-labelledby="landingTitle">
+      <div class="landing-topline">
+        <span class="landing-eyebrow"><span class="landing-orbit"></span> RESEARCH IMAGING WORKSPACE</span>
+        <span class="landing-version">NEUROSCAN / 01</span>
+      </div>
+      <div class="landing-hero">
+        <div class="landing-copy">
+          <p class="landing-kicker">A clearer view of the scan</p>
+          <h1 id="landingTitle">Explore brain MRI<br><span>with more context.</span></h1>
+          <p class="landing-intro">A research workstation for brain MRI classification, visual explanations, and volumetric tumor segmentation experiments.</p>
+          <div class="landing-actions">
+            <button class="landing-primary" id="enterWorkstationBtn">Open the workstation <span aria-hidden="true">→</span></button>
+            <a class="landing-secondary" href="#landing-capabilities">Explore capabilities <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="landing-notice"><span aria-hidden="true">ⓘ</span> Research and education only. Not for clinical diagnosis or treatment decisions.</p>
+        </div>
+        <div class="landing-visual" aria-label="MRI scan preview">
+          <div class="visual-grid"></div>
+          <div class="visual-index">MRI / AXIAL <span>01—05</span></div>
+          <div class="scan-frame">
+            <img src="assets/samples/glioma.jpg" alt="Example axial brain MRI research image">
+            <div class="scan-crosshair scan-crosshair-h"></div>
+            <div class="scan-crosshair scan-crosshair-v"></div>
+            <span class="scan-target"><i></i></span>
+            <span class="scan-label">IMAGE PREVIEW</span>
+          </div>
+          <div class="visual-caption"><span>NEURO-ONCOLOGY</span><span>VISUAL ANALYSIS / 2D + 3D</span></div>
+          <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        </div>
+      </div>
+      <div class="landing-capabilities" id="landing-capabilities">
+        <article><span class="capability-number">01</span><div><h2>Image classification</h2><p>Four class 2D MRI workflow with optional Grad-CAM visualization.</p></div></article>
+        <article><span class="capability-number">02</span><div><h2>Volumetric review</h2><p>Axial, coronal, and sagittal views for NIfTI research scans.</p></div></article>
+        <article><span class="capability-number">03</span><div><h2>Segmentation research</h2><p>Inspect tumor regions, volume measurements, and 3D surfaces.</p></div></article>
+      </div>
+      <div class="landing-footer"><span>BUILT FOR INVESTIGATION · NOT CLINICAL USE</span><span>LOCAL WORKSTATION <b>●</b></span></div>
+    </section>
+
+    <script>document.body.classList.add('landing-mode');</script>
+
     <!-- ================================================== -->
     <!-- TOP NAVIGATION                                     -->
     <!-- ================================================== -->
